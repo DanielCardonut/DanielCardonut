@@ -109,3 +109,55 @@ nav{
  .sub span{
      color: goldenrod;
  }
+
+
+footer{
+    margin-top: 70px;
+    widows: 100%;
+    height: 100px;
+    background-color: #3d3d3d;
+}
+
+.bottomMenu{
+    margin: 0 auto;
+    width: 80%;
+    height: 50%;
+   
+}
+
+.bottomContainer{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: center;
+}
+
+#bottomOp{
+   
+    width: 20%;
+    text-align:center;
+    vertical-align: middle;
+    padding-top:15px;
+    padding-bottom: 20px;
+}
+
+#bottomOp a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-size:15px;
+    text-decoration: none;
+}
+
+#bottomOp:hover{
+    background-color:#535c68;
+}
+
+.copy{
+    margin: 0 auto;
+    color:white;
+    width: 30%;
+    text-align:center;
+}

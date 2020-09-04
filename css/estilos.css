@@ -6,73 +6,165 @@ body{
     background-attachment: fixed;
 }
 
-nav{
-    widows: 100%;
-    height: 50px;
-    background-color: #3d3d3d;
-    display: flex;
-    opacity: 60%;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-#menuTop{
-    width: 70%;
-    height: 100%;
-    text-align: center;
-    
-}
-
- ul{
-    font-family: Arial, Helvetica, sans-serif;
-    list-style: none;
-    margin:0;
-    padding: 0;
-    overflow: hidden;
+a{
     text-decoration: none;
- }
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
- li{
-     display: inline;
- }
+/*Contenedor de las nav-sections*/
 
- li a{
-    display: inline-block;
-    color: white;
-    padding: 16px 60px;
-    font-weight: bold;
-    text-align-last: center;
-    text-decoration:none;
+ header{
+     width: 100%;
+     height: 80px;
+     margin-bottom: 35px;
+     display: flex;
+     background-color: #3d3d3d;
+     opacity: 80%;
+     display: grid;
+     grid-template-columns: 1fr 250px 1fr;
  }
-
- li a:hover{
-     background-color:#222f3e ;
- }
-
- #redes{
-     float: right;
-     width: 5%;
-     height: 100%;
+/* Sección izquierda del header */
+ header .nav-left-section {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     height: inherit;
      
  }
 
- #redes img{
-     width: 40px;
-     height: 40px;
-     padding-top: 5px;
-     padding-left: 5px;
+ header .nav-left-section ul{
+     display: flex;
+     height: auto;
+     align-items: center;
+     justify-content: center;
+     
+     list-style: none;
  }
+
+ header .nav-left-section li {
+     padding:10px ;
+     margin: 0 30px;
+ }
+
+ header .nav-left-section ul li a{
+     text-decoration: none;
+     font-size: 18px;
+     font-weight: bold;
+     color: white;
+ }
+
+ header .nav-left-section ul li:hover{
+     box-shadow: 0 3px 3px 0;
+     background-color: #535c68;
+     border-radius: 5px;
+ }
+ 
+ header .nav-left-section ul li a:hover{
+    font-size: 20px;
+}
+
+/*Sección central del header*/
+
+header .logo-center-section {
+     margin: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: inherit;
+     
+}
+
+
+header .logo-center-section img {
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+    
+}
+
+/*Sección derecha del header*/
+
+header .nav-right-section {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     height: inherit;
+
+}
+
+header .nav-right-section ul {
+     margin-left: 190px;
+     padding: 0;
+     display: flex;
+     height: auto;
+     align-items: center;
+     justify-content: center;
+     
+     list-style: none;
+}
+
+header .nav-right-section li {
+    padding:10px ;
+    margin: 0 30px;
+}
+
+header .nav-right-section ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+header .nav-right-section ul li:hover{
+    box-shadow: 0 3px 3px 0;
+    background-color: #535c68;
+    border-radius: 5px;
+}
+
+header .nav-right-section ul li a:hover{
+   font-size: 20px;
+}
+
+header .nav-right-section #redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .nav-right-section #redes a {
+    margin: 0 10px;
+    
+}
+
+header .nav-right-section #redes img {
+    width: 45px;
+    height: 45px;
+}
+
+header .nav-right-section #redes img:hover {
+    box-shadow: 0 4px 3px 0 #212121;
+    width: 48px;
+    height: 48px;
+}
+
+
+
+
+/*Inicio de la sección principal*/
 
  #principal{
      margin: 0 auto;
      background-color: #222f3e;
+     border-radius: 5px;
      opacity: 20%;
      width: 70%;
      height: 800px;
  }
 
  #principal:hover{
-    opacity: 60%;
+    opacity: 70%;
 }
 
  .contenedorTitulo{
@@ -107,9 +199,12 @@ nav{
  }
  
  .sub span{
-     color: goldenrod;
+     color: #daa520;
  }
 
+
+
+/*Inicio de la sección footer*/
 
 footer{
     margin-top: 70px;
@@ -122,6 +217,7 @@ footer{
     margin: 0 auto;
     width: 80%;
     height: 50%;
+    
    
 }
 
@@ -129,13 +225,13 @@ footer{
     width: 80%;
     height: 100%;
     margin: 0 auto;
-    
     display: flex;
     justify-content: center;
+   
 }
 
 #bottomOp{
-   
+    
     width: 20%;
     text-align:center;
     vertical-align: middle;
@@ -146,18 +242,25 @@ footer{
 #bottomOp a{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    
+   
     font-size:15px;
     text-decoration: none;
+    padding: 5px;
 }
 
-#bottomOp:hover{
+#bottomOp a:hover{
     background-color:#535c68;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 3px 3px 0 #212121;
 }
+
+/*Sección del copyright*/
 
 .copy{
     margin: 0 auto;
     color:white;
-    width: 30%;
+    border-top: 1px solid #4b4b4b;
+    width: 100%;
     text-align:center;
 }

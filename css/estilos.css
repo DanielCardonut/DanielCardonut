@@ -216,6 +216,7 @@ footer{
     margin: 0 auto;
     width: 80%;
     height: 50%;
+    
    
 }
 
@@ -223,13 +224,13 @@ footer{
     width: 80%;
     height: 100%;
     margin: 0 auto;
-    
     display: flex;
     justify-content: center;
+   
 }
 
 #bottomOp{
-   
+    
     width: 20%;
     text-align:center;
     vertical-align: middle;
@@ -240,18 +241,25 @@ footer{
 #bottomOp a{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    
+   
     font-size:15px;
     text-decoration: none;
+    padding: 5px;
 }
 
-#bottomOp:hover{
+#bottomOp a:hover{
     background-color:#535c68;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 3px 3px 0 #212121;
 }
+
+/*Sección del copyright*/
 
 .copy{
     margin: 0 auto;
     color:white;
-    width: 30%;
+    border-top: 1px solid #4b4b4b;
+    width: 100%;
     text-align:center;
 }
